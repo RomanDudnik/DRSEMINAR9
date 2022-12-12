@@ -4,6 +4,16 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
+void ShowNumbers(int n)
+{
+    Console.Write(n + " ");
+    if (n > 1) ShowNumbers (n - 1);
+}
+
+Console.WriteLine("Input your number: ");
+int num = Convert.ToInt16(Console.ReadLine());
+ShowNumbers(num);
+
 // Задача 66: Задайте значения M и N. Напишите программу, 
 // которая найдёт сумму натуральных элементов в промежутке от M до N.
 

@@ -79,7 +79,7 @@ Console.WriteLine(functionAkerman);
 
 // Задача: Написать рекурсивную функцию перевода из десятичной системы исчисления в двоичную.
 
-
+/*
 void DecimaltoBinary(int i)
 {
     string numsBynar = string.Empty;
@@ -98,3 +98,4 @@ Console.Write(numsBynar);
 Console.Write("Input number: ");
 int numDecimal = Convert.ToInt32(Console.ReadLine());
 DecimaltoBinary(numDecimal);
+*/

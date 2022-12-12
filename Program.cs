@@ -13,7 +13,7 @@ void ShowNumbers(int n)
 }
 
 Console.WriteLine("Input your number: ");
-int num = Convert.ToInt16(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 ShowNumbers(num);
 */
 
@@ -38,9 +38,9 @@ int SumDigitsMN(int m, int n)
 }
 
 Console.WriteLine("Input your first number: ");
-int firstNum = Convert.ToInt16(Console.ReadLine());
+int firstNum = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input your second number: ");
-int secondNum = Convert.ToInt16(Console.ReadLine());
+int secondNum = Convert.ToInt32(Console.ReadLine());
 
 int sum = SumDigitsMN(firstNum, secondNum);
 Console.WriteLine($"The sum of the numbers of the segment from {firstNum} to {secondNum} is {sum}");
@@ -69,9 +69,9 @@ int AkkermanMethod(int m, int n)
 }
 
 Console.WriteLine("Input your first number: ");
-int firstNum = Convert.ToInt16(Console.ReadLine());
+int firstNum = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input your second number: ");
-int secondNum = Convert.ToInt16(Console.ReadLine());
+int secondNum = Convert.ToInt32(Console.ReadLine());
 
 int functionAkerman = AkkermanMethod(firstNum, secondNum);
 Console.WriteLine(functionAkerman);

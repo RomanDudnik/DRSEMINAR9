@@ -50,7 +50,7 @@ Console.WriteLine($"The sum of the numbers of the segment from {firstNum} to {se
 // Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
-
+/*
 int AkkermanMethod(int m, int n)
 {
     if (m == 0)
@@ -74,6 +74,22 @@ int secondNum = Convert.ToInt16(Console.ReadLine());
 
 int functionAkerman = AkkermanMethod(firstNum, secondNum);
 Console.WriteLine(functionAkerman);
+*/
 
 // Задача: Написать рекурсивную функцию перевода из десятичной системы исчисления в двоичную.
 
+void DecimaltoBinary(int i)
+{
+    string nums = "";
+    if (i > 0)
+    {
+        if (i % 2 == 1)
+        Console.Write(nums += "1");
+        else
+        Console.Write(nums += "0");
+        DecimaltoBinary(i / 2);
+    }
+}
+Console.Write("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+DecimaltoBinary(num);

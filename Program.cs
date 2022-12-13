@@ -10,6 +10,9 @@ void ShowNumbers(int n)
     Console.Write(n + " ");
     if (n > 1) 
         ShowNumbers (n - 1);
+    if (n < 1) 
+        ShowNumbers (n + 1);
+  
 }
 
 Console.WriteLine("Input your number: ");

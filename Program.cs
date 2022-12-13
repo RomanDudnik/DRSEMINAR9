@@ -35,7 +35,7 @@ int SumDigitsMN(int m, int n)
     else
     {
         m++;
-        sum = m - 1+ SumDigitsMN(m, n);
+        sum = m - 1 + SumDigitsMN(m, n);
         return sum;
     }
 }
@@ -61,14 +61,15 @@ int AkkermanMethod(int m, int n)
     {
         return n + 1;
     }
-    else if (n == 0 && m > 0)
-    {
-        return AkkermanMethod(m - 1, 1);
-    }
-    else
-    {
-        return (AkkermanMethod(m - 1, AkkermanMethod(m, n - 1)));
-    }
+    else 
+        if (n == 0 && m > 0)
+        {
+            return AkkermanMethod(m - 1, 1);
+        }
+        else
+        {
+            return (AkkermanMethod(m - 1, AkkermanMethod(m, n - 1)));
+        }
 }
 
 Console.WriteLine("Input your first number: ");
@@ -90,10 +91,10 @@ void DecimaltoBinary(int i)
     if (i != 0)
     {
         if (i % 2 == 1)
-        numsBynar += "1";
+            numsBynar += "1";
         else
-        numsBynar += "0";
-        DecimaltoBinary(i / 2);
+            numsBynar += "0";
+            DecimaltoBinary(i / 2);
     }
 Console.Write(numsBynar);
 }
